@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agenda Telefônica</title>
+    <link rel="icon" href="./imgs/agenda.png" type="image/x-com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Creepster&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <img src="imgs/agenda.png" alt="Icone Agenda">
+            <h1>Agenda Telefônica</h1>
+            <img src="imgs/abobora.png" alt="Abóbora Halloween">
+        </header>
+        <form>
+            <img src="./imgs/contato.png" alt="Contato">
+            <input type="text" id="nome-contato" placeholder="Nome" required>
+            <img src="./imgs/telefone.png" alt="Telefone">
+            <input type="number" id="num-contato" placeholder="Número" required>
+            <button type="submit">Adicionar</button>
+        </form>
+        <div class="lista-contatos">
+            <header>
+                <h2>Seus contatos</h2>
+            </header>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Número</th>
+                    </tr>
+                </thead>
+                <tbody>
+
+                </tbody>
+                <tfoot>
+                    <tr class="agenda-final">
+                        <td id="nome"></td>
+                        <td id="numero"></td>
+                    </tr>
+                </tfoot>
+            </table>
+            <div class="rodape">
+                <p id="contagem">0 Contatos Salvos</p>
+            </div>
+        </div>
+    </div>
+    <footer class="base">
+        &copy; Samuel Tonon - Desenvolvedor Full Stack Python - 2024
+    </footer>
+    <script src="./script.js"></script>
+</body>
+
+</html>
